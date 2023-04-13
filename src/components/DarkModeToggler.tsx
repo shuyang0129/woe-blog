@@ -1,16 +1,44 @@
-import React, { memo } from 'react'
+'use client'
 import { MoonIcon, SunIcon } from '@heroicons/react/24/outline'
+import clsx from 'clsx'
+import React, { Fragment, memo } from 'react'
 
 function DarkModeToggler() {
+  const toggleDarkMode = () => {
+    document.documentElement.classList.toggle('dark')
+  }
+
   return (
-    <button
-      type="button"
-      // dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20
-      className="group rounded-full bg-white/90 p-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition"
-    >
-      <MoonIcon className="h-4 w-4 stroke-warm-gray-800" aria-hidden="true" />
-      {/* <SunIcon className="h-5 w-5 fill-warm-gray-800" aria-hidden="true" /> */}
-    </button>
+    <Fragment>
+      <button
+        type="button"
+        aria-label="Toggle dark mode"
+        className={clsx('group', 'p-2')}
+        onClick={toggleDarkMode}
+      >
+        <SunIcon
+          className={clsx(
+            'h-5',
+            'w-5',
+            'stroke-zinc-700/80',
+            'group-hover:stroke-zinc-700',
+            'dark:hidden'
+          )}
+          aria-hidden="true"
+        />
+        <MoonIcon
+          className={clsx(
+            'h-5',
+            'w-5',
+            'stroke-zinc-100/80',
+            'group-hover:stroke-zinc-100',
+            'hidden',
+            'dark:block'
+          )}
+          aria-hidden="true"
+        />
+      </button>
+    </Fragment>
   )
 }
 
