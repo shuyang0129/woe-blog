@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import '@/styles/reset.css'
 
+import Layout from '@/components/Layout'
 import localFont from 'next/font/local'
 import { Fragment } from 'react'
 
@@ -65,7 +66,9 @@ export default function App({ Component, pageProps }: AppProps) {
           font-family: ${inter.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </Fragment>
   )
 }
