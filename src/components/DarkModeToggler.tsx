@@ -18,8 +18,8 @@ function DarkModeToggler() {
       >
         <SunIcon
           className={clsx(
-            'h-5',
-            'w-5',
+            'h-6',
+            'w-6',
             'stroke-zinc-700/80',
             'group-hover:stroke-zinc-700',
             'dark:hidden'
@@ -28,8 +28,8 @@ function DarkModeToggler() {
         />
         <MoonIcon
           className={clsx(
-            'h-5',
-            'w-5',
+            'h-6',
+            'w-6',
             'stroke-zinc-100/80',
             'group-hover:stroke-zinc-100',
             'hidden',
