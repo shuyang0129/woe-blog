@@ -6,11 +6,13 @@ import React, { Fragment } from 'react'
 function Home() {
   return (
     <Fragment>
-      <HeroSection />
-      <div className="w-full mt-16" />
       <Container.Outer>
-        <BlogListSection />
+        <HeroSection />
       </Container.Outer>
+      <Container>
+        <div className="w-full mt-16" />
+        <BlogListSection />
+      </Container>
     </Fragment>
   )
 }

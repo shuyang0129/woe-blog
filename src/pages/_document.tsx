@@ -21,7 +21,7 @@ export default function Document() {
           }}
         />
       </Head>
-      <body>
+      <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
         <Main />
         <NextScript />
       </body>

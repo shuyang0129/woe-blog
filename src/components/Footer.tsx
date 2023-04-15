@@ -13,7 +13,7 @@ function Footer() {
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
-        <Container.Outer className={clsx('pb-8', 'pt-16', 'sm:pt-24', 'lg:pt-32')}>
+        <Container className={clsx('pb-8', 'pt-16', 'sm:pt-24', 'lg:pt-32')}>
           <Divider />
           <NewsLetter className={clsx()} />
           <Divider />
@@ -31,7 +31,7 @@ function Footer() {
               &copy; 2023 Shuyang Chou. All rights reserved.
             </p>
           </div>
-        </Container.Outer>
+        </Container>
       </footer>
     </Fragment>
   )
