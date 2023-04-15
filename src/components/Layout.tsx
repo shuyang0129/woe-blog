@@ -1,6 +1,7 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import React, { Fragment, memo, ReactNode } from 'react';
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import clsx from 'clsx'
+import React, {  memo, ReactNode } from 'react'
 
 interface Props {
   children?: ReactNode
@@ -8,11 +9,11 @@ interface Props {
 
 function Layout({ children }: Props) {
   return (
-    <Fragment>
+    <div className={clsx('flex', 'flex-col', 'h-screen')}>
       <Header />
-      {children}
+      <main className={clsx('flex-1')}>{children}</main>
       <Footer />
-    </Fragment>
+    </div>
   )
 }
 
