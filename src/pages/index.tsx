@@ -1,12 +1,16 @@
 import BlogListSection from '@/components/BlogListSection'
 import Container from '@/components/Container'
-import React from 'react'
+import HeroSection from '@/components/HeroSection'
+import React, { Fragment } from 'react'
 
 function Home() {
   return (
-    <Container.Outer>
-      <BlogListSection />
-    </Container.Outer>
+    <Fragment>
+      <HeroSection />
+      <Container.Outer>
+        <BlogListSection />
+      </Container.Outer>
+    </Fragment>
   )
 }
 
