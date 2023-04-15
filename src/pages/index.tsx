@@ -7,6 +7,7 @@ function Home() {
   return (
     <Fragment>
       <HeroSection />
+      <div className="w-full mt-16" />
       <Container.Outer>
         <BlogListSection />
       </Container.Outer>
