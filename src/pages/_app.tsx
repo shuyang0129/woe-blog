@@ -1,4 +1,6 @@
 import '@/styles/globals.css'
+import '@/styles/prism.css'
+import '@/styles/prism-nord.css'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'

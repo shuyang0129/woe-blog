@@ -1,4 +1,6 @@
 import nextMDX from '@next/mdx'
+import remarkGfm from 'remark-gfm'
+import rehypePrism from 'rehype-prism-plus'
 
 /**
  * @link https://nextjs.org/docs/advanced-features/using-mdx
@@ -9,8 +11,8 @@ const withMDX = nextMDX({
     // If you use remark-gfm, you'll need to use next.config.mjs
     // as the package is ESM only
     // https://github.com/remarkjs/remark-gfm#install
-    remarkPlugins: [],
-    rehypePlugins: [],
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [[rehypePrism, { ignoreMissing: true, showLineNumbers: true }]],
     // If you use `MDXProvider`, uncomment the following line.
     // providerImportSource: "@mdx-js/react",
   },
