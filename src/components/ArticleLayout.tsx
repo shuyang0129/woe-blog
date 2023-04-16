@@ -28,14 +28,11 @@ function ArticleLayout({ meta, children }: Props) {
           <div className="mx-auto max-w-2xl">
             <article>
               <header className="flex flex-col">
-                <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl">
                   {meta.title}
                 </h1>
                 <div className={clsx('order-first', 'flex', 'items-center', 'gap-x-4', 'text-xs')}>
-                  <time
-                    dateTime={meta.date}
-                    className="flex items-center text-base text-zinc-400 dark:text-zinc-500"
-                  >
+                  <time dateTime={meta.date} className="flex items-center text-base text-gray-400">
                     {meta.date}
                   </time>
                   <a

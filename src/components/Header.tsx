@@ -11,7 +11,7 @@ function Header() {
     <header>
       <Container className={clsx('py-6')}>
         <div className={clsx('flex-1', 'flex', 'items-center', 'justify-between', 'max-w-7xl')}>
-          <h2 className={clsx(logo.className, 'text-zinc-700', 'dark:text-zinc-100')}>ShuYang</h2>
+          <h2 className={clsx(logo.className, 'text-gray-700')}>ShuYang</h2>
           <DarkModeToggler />
         </div>
       </Container>

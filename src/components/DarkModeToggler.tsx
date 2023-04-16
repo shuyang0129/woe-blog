@@ -20,8 +20,8 @@ function DarkModeToggler() {
           className={clsx(
             'h-6',
             'w-6',
-            'stroke-zinc-700/80',
-            'group-hover:stroke-zinc-700',
+            'stroke-gray-700/80',
+            'group-hover:stroke-gray-700',
             'dark:hidden'
           )}
           aria-hidden="true"
@@ -30,8 +30,8 @@ function DarkModeToggler() {
           className={clsx(
             'h-6',
             'w-6',
-            'stroke-zinc-100/80',
-            'group-hover:stroke-zinc-100',
+            'stroke-gray-700/80',
+            'group-hover:stroke-gray-700',
             'hidden',
             'dark:block'
           )}

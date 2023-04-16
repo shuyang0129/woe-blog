@@ -62,7 +62,7 @@ function BlogCard({ post }: Props) {
       <div className={clsx('flex', 'mt-4')}>
         <a
           href={'/'}
-          className={clsx('text-sm', 'font-semibold', 'leading-6', 'text-indigo-600')}
+          className={clsx('text-sm', 'font-semibold', 'leading-6', 'text-gray-600')}
           aria-describedby="featured-post"
         >
           Continue reading <span aria-hidden="true">&rarr;</span>
