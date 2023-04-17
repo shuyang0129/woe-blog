@@ -35,8 +35,7 @@ function BlogCard({ post }: Props) {
             'px-3',
             'py-1.5',
             'font-medium',
-            'text-gray-600',
-            'hover:bg-gray-100'
+            'text-gray-600'
           )}
         >
           {post.category.title}
@@ -55,7 +54,7 @@ function BlogCard({ post }: Props) {
         >
           <a href={post.href}>{post.title}</a>
         </h3>
-        <p className={clsx('mt-5', 'line-clamp-3', 'text-sm', 'leading-6', 'text-gray-600')}>
+        <p className={clsx('mt-5', 'line-clamp-3', 'text-sm', 'leading-6', 'text-gray-700')}>
           {post.description}
         </p>
       </div>

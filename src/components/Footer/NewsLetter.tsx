@@ -13,7 +13,7 @@ function NewsLetter({ className }: Props) {
         <h3 className={clsx('text-sm', 'font-semibold', 'leading-6', 'text-gray-900')}>
           Subscribe to our newsletter
         </h3>
-        <p className={clsx('mt-2', 'text-sm', 'leading-6', 'text-gray-600')}>
+        <p className={clsx('mt-2', 'text-sm', 'leading-6', 'text-gray-700')}>
           The latest news, articles, and resources, sent to your inbox weekly.
         </p>
       </div>
@@ -33,19 +33,19 @@ function NewsLetter({ className }: Props) {
             'appearance-none',
             'rounded-md',
             'border-0',
-            'bg-white',
+            'bg-gray-50',
             'px-3',
             'py-1.5',
             'text-base',
-            'text-gray-900',
+            'text-gray-700',
             'shadow-sm',
             'ring-1',
             'ring-inset',
             'ring-gray-300',
-            'placeholder:text-gray-400',
-            'focus:ring-2',
-            'focus:ring-inset',
-            'focus:ring-indigo-600',
+            'placeholder:text-gray-500',
+            // 'focus:ring-2',
+            // 'focus:ring-inset',
+            // 'focus:ring-indigo-600',
             'sm:w-56',
             'sm:text-sm',
             'sm:leading-6'
