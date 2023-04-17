@@ -17,24 +17,11 @@ function DarkModeToggler() {
         onClick={toggleDarkMode}
       >
         <SunIcon
-          className={clsx(
-            'h-6',
-            'w-6',
-            'stroke-zinc-700/80',
-            'group-hover:stroke-zinc-700',
-            'dark:hidden'
-          )}
+          className={clsx('h-6', 'w-6', 'stroke-gray-900', 'dark:hidden')}
           aria-hidden="true"
         />
         <MoonIcon
-          className={clsx(
-            'h-6',
-            'w-6',
-            'stroke-zinc-100/80',
-            'group-hover:stroke-zinc-100',
-            'hidden',
-            'dark:block'
-          )}
+          className={clsx('h-6', 'w-6', 'stroke-gray-900', 'hidden', 'dark:block')}
           aria-hidden="true"
         />
       </button>
