@@ -20,12 +20,13 @@ function PrimaryButton({ className, children, ...props }: Props) {
         'py-2',
         'text-sm',
         'font-semibold',
-        'text-white',
+        'text-gray-50',
         'shadow-sm',
         'hover:bg-zinc-500',
-        'focus-visible:outline',
-        'focus-visible:outline-2',
-        'focus-visible:outline-offset-2 focus-visible:outline-indigo-600',
+        // 'focus-visible:outline',
+        // 'focus-visible:outline-2',
+        // 'focus-visible:outline-offset-2 focus-visible:outline-indigo-600',
+        'gradient-primary',
         className
       )}
       {...props}

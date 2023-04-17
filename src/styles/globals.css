@@ -4,6 +4,8 @@
 
 @layer base {
   :root {
+    --color-primary: 47 112 193;
+    --color-secondary: 116 97 195;
     --color-zinc-50: 250 250 250;
     --color-zinc-100: 244 244 245;
     --color-zinc-200: 228 228 231;
@@ -18,6 +20,8 @@
   }
 
   :root[class='dark'] {
+    --color-primary: 138 180 248;
+    --color-secondary: 193 168 226;
     --color-zinc-950: 250 250 250;
     --color-zinc-900: 244 244 245;
     --color-zinc-800: 228 228 231;
@@ -29,5 +33,11 @@
     --color-zinc-200: 39 39 42;
     --color-zinc-100: 24 24 27;
     --color-zinc-50: 9 9 11;
+  }
+}
+
+@layer components {
+  .gradient-primary {
+    @apply bg-gradient-to-br from-primary to-secondary;
   }
 }

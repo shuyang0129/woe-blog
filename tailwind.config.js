@@ -14,6 +14,8 @@ module.exports = {
         sans: ['var(--font-inter)', ...fontFamily.sans],
       },
       colors: {
+        primary: 'rgb(var(--color-primary) / <alpha-value>)',
+        secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
         gray: {
           50: 'rgb(var(--color-zinc-50) / <alpha-value>)',
           100: 'rgb(var(--color-zinc-100) / <alpha-value>)',
