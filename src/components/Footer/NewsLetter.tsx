@@ -41,7 +41,7 @@ function NewsLetter({ className }: Props) {
             'shadow-sm',
             'ring-1',
             'ring-inset',
-            'ring-gray-300',
+            'ring-gray-200',
             'placeholder:text-gray-500',
             // 'focus:ring-2',
             // 'focus:ring-inset',
