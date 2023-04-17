@@ -5,7 +5,7 @@ import BlogListSection from '@/components/BlogListSection'
 import Container from '@/components/Container'
 import HeroSection from '@/components/HeroSection'
 
-function Home() {
+function HomePage() {
   return (
     <Fragment>
       <Head>
@@ -26,4 +26,4 @@ function Home() {
   )
 }
 
-export default Home
+export default HomePage
