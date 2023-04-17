@@ -1,7 +1,8 @@
 'use client'
-import { MoonIcon, SunIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 import React, { Fragment, memo } from 'react'
+
+import { MoonIcon, SunIcon } from '@heroicons/react/24/outline'
 
 function DarkModeToggler() {
   const toggleDarkMode = () => {
@@ -17,11 +18,26 @@ function DarkModeToggler() {
         onClick={toggleDarkMode}
       >
         <SunIcon
-          className={clsx('h-6', 'w-6', 'stroke-gray-900', 'dark:hidden')}
+          className={clsx(
+            'h-6',
+            'w-6',
+            'stroke-gray-900',
+            'group-hover:stroke-gray-900/70',
+            'transition-colors',
+            'dark:hidden'
+          )}
           aria-hidden="true"
         />
         <MoonIcon
-          className={clsx('h-6', 'w-6', 'stroke-gray-900', 'hidden', 'dark:block')}
+          className={clsx(
+            'h-6',
+            'w-6',
+            'stroke-gray-900',
+            'group-hover:stroke-gray-900/70',
+            'transition-colors',
+            'hidden',
+            'dark:block'
+          )}
           aria-hidden="true"
         />
       </button>
