@@ -8,7 +8,6 @@ import { Fragment, memo } from 'react'
 function Footer() {
   return (
     <Fragment>
-      <div className={clsx('w-full', 'mt-16', 'sm:mt-20', 'lg:mt-24')} aria-hidden />
       <footer aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
