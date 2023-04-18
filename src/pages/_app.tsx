@@ -74,13 +74,11 @@ export default function App({ Component, pageProps }: AppProps) {
           <div className="w-full bg-white ring-1 ring-gray-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
         </div>
       </div>
-      <div className={clsx('relative', 'flex', 'flex-col', 'h-screen')}>
-        <Header />
-        <main className={clsx('flex-1')}>
-          <Component {...pageProps} />
-        </main>
-        <Footer />
-      </div>
+      <Header />
+      <main className={clsx('relative')}>
+        <Component {...pageProps} />
+      </main>
+      <Footer />
     </Fragment>
   )
 }
