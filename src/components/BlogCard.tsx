@@ -58,7 +58,7 @@ function BlogCard({ post }: Props) {
           {post.description}
         </p>
       </div>
-      <div className={clsx('flex', 'mt-4')}>
+      <div className={clsx('group', 'mt-4')}>
         <a
           href={'/'}
           className={clsx(
@@ -67,11 +67,16 @@ function BlogCard({ post }: Props) {
             'leading-6',
             'text-transparent',
             'bg-clip-text',
-            'gradient-primary'
+            'gradient-primary',
+            'flex',
+            'items-center'
           )}
           aria-describedby="featured-post"
         >
-          Continue reading <span aria-hidden="true">&rarr;</span>
+          <span>Continue reading</span>
+          <span aria-hidden="true" className={clsx('ml-1', 'group-hover:ml-2', 'transition-all')}>
+            &rarr;
+          </span>
         </a>
       </div>
     </article>
