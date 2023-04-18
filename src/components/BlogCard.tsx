@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import Link from 'next/link'
 import React, { memo } from 'react'
 
 interface Post {
@@ -59,8 +60,8 @@ function BlogCard({ post }: Props) {
         </p>
       </div>
       <div className={clsx('group', 'mt-4')}>
-        <a
-          href={'/'}
+        <Link
+          href={'/blog/crafting-a-design-system-for-a-multiplanetary-future'}
           className={clsx(
             'text-sm',
             'font-semibold',
@@ -77,7 +78,7 @@ function BlogCard({ post }: Props) {
           <span aria-hidden="true" className={clsx('ml-1', 'group-hover:ml-2', 'transition-all')}>
             &rarr;
           </span>
-        </a>
+        </Link>
       </div>
     </article>
   )

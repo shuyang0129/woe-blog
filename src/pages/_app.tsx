@@ -1,9 +1,10 @@
 import '@/styles/globals.css'
-import '@/styles/prism.css'
 import '@/styles/prism-nord.css'
+import '@/styles/prism.css'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import usePrevious from '@/hooks/usePrevious'
 import clsx from 'clsx'
 import localFont from 'next/font/local'
 import { Fragment } from 'react'
@@ -61,7 +62,13 @@ const inter = localFont({
   variable: '--font-inter',
 })
 
-export default function App({ Component, pageProps }: AppProps) {
+export interface PageProps {
+  previousPathname: string | undefined
+}
+
+export default function App({ Component, pageProps, router }: AppProps) {
+  let previousPathname = usePrevious(router.pathname)
+
   return (
     <Fragment>
       <style jsx global>{`
@@ -77,7 +84,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className={clsx('relative')}>
         <Header />
         <main>
-          <Component {...pageProps} />
+          <Component previousPathname={previousPathname} {...pageProps} />
         </main>
         <Footer />
       </div>
