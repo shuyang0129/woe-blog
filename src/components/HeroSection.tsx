@@ -26,7 +26,14 @@ function HeroSection() {
           <div className={clsx('mx-auto', 'max-w-2xl', 'py-24')}>
             <div className={clsx('mb-8', 'flex', 'items-center', 'justify-center')}>
               <TypeAnimation
-                sequence={['Hi, This is ShuYang.', 1000, 'Welcome to my blog.. =)', 1000]}
+                sequence={[
+                  'Hello, World!',
+                  1500,
+                  'Hi, This is ShuYang.',
+                  1500,
+                  'Welcome to my blog. =)',
+                  1500,
+                ]}
                 wrapper="div"
                 speed={50}
                 className={clsx(
