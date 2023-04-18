@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import Image from 'next/image'
 import { memo } from 'react'
-
+import { TypeAnimation } from 'react-type-animation'
 import Container from '@/components/Container'
 
 function HeroSection() {
@@ -24,8 +24,11 @@ function HeroSection() {
         />
         <Container.Inner>
           <div className={clsx('mx-auto', 'max-w-2xl', 'py-24')}>
-            <div className={clsx('mb-8', 'flex', 'justify-center')}>
-              <div
+            <div className={clsx('mb-8', 'flex', 'items-center', 'justify-center')}>
+              <TypeAnimation
+                sequence={['Hi, This is ShuYang.', 1000, 'Welcome to my blog.. =)', 1000]}
+                wrapper="div"
+                speed={50}
                 className={clsx(
                   'relative',
                   'rounded-full',
@@ -39,9 +42,7 @@ function HeroSection() {
                   'transition',
                   'hover:ring-white/20'
                 )}
-              >
-                Welcome to my blog. <span className="text-lg">☺</span>
-              </div>
+              />
             </div>
             <div className={clsx('text-center')}>
               <h1
