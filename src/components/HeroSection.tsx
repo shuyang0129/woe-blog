@@ -21,6 +21,7 @@ function HeroSection() {
             'opacity-20'
           )}
           fill
+          priority
         />
         <Container.Inner>
           <div className={clsx('mx-auto', 'max-w-2xl', 'py-24')}>
