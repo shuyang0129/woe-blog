@@ -21,7 +21,6 @@ interface Props extends PageProps {
 
 function ArticleLayout({ meta, children, previousPathname }: Props) {
   const router = useRouter()
-  console.log('previousPathname', previousPathname)
 
   return (
     <Fragment>
