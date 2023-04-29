@@ -6,7 +6,8 @@ import { MoonIcon, SunIcon } from '@heroicons/react/24/outline'
 
 function DarkModeToggler() {
   const toggleDarkMode = () => {
-    document.documentElement.classList.toggle('dark')
+    const isDarkMode = document.documentElement.classList.toggle('dark')
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light')
   }
 
   return (
